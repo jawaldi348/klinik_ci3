@@ -7,3 +7,10 @@ if (!function_exists('assets')) {
         return $link;
     }
 }
+if (!function_exists('rupiah')) {
+    function rupiah($uang)
+    {
+        $format = number_format($uang, 0, ",", ".");
+        return $format;
+    }
+}
