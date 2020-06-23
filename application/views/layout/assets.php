@@ -42,7 +42,9 @@
 <script src="<?= assets() ?>js/jquery-2.1.4.min.js"></script>
 
 <!-- <![endif]-->
-
+<script src="<?= assets() ?>js/jquery.dataTables.min.js"></script>
+<script src="<?= assets() ?>js/jquery.dataTables.bootstrap.min.js"></script>
+<script src="<?= assets() ?>js/dataTables.buttons.min.js"></script>
 <!--[if IE]>
 <script src="<?= assets() ?>js/jquery-1.11.3.min.js"></script>
 <![endif]-->
@@ -63,3 +65,13 @@
 <!-- ace scripts -->
 <script src="<?= assets() ?>js/ace-elements.min.js"></script>
 <script src="<?= assets() ?>js/ace.min.js"></script>
+
+<script src="<?= assets() ?>sweetalert2/dist/sweetalert2.all.min.js"></script>
+<link href="<?= assets() ?>sweetalert2/dist/sweetalert2.min.css" rel="stylesheet">
+<script>
+    $(function() {
+        $('#data-tabel').DataTable({
+            ordering: false
+        })
+    });
+</script>
