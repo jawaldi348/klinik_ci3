@@ -1,3 +1,4 @@
+<?php $urls = $this->uri->segment(1) ?>
 <div id="sidebar" class="sidebar                  responsive                    ace-save-state">
     <script type="text/javascript">
         try {
@@ -6,8 +7,8 @@
     </script>
 
     <ul class="nav nav-list">
-        <li class="active">
-            <a href="index.html">
+        <li class="<?= $urls == "welcome" ? "active" : null ?>">
+            <a href="<?= site_url('welcome') ?>">
                 <i class="menu-icon icon-home4"></i>
                 <span class="menu-text"> Dashboard </span>
             </a>
@@ -15,7 +16,7 @@
             <b class="arrow"></b>
         </li>
 
-        <li class="">
+        <li class="<?= $urls == "tindakan" ? "active open" : null ?>">
             <a href="#" class="dropdown-toggle">
                 <i class="menu-icon icon-grid4"></i>
                 <span class="menu-text">Master Data</span>
@@ -26,10 +27,10 @@
 
             <ul class="submenu">
 
-                <li class="">
-                    <a href="typography.html">
+                <li class="<?= $urls == "tindakan" ? "active" : null ?>">
+                    <a href="<?= site_url('tindakan') ?>">
                         <i class="menu-icon fa fa-caret-right"></i>
-                        Typography
+                        Tindakan
                     </a>
 
                     <b class="arrow"></b>

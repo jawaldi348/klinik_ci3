@@ -8,7 +8,7 @@ class Welcome extends CI_Controller
 		$data = [
 			'title' => 'Dashboard',
 			'small' => title(),
-			'links' => '<li class="active">Dashboard</li>'
+			'links' => ''
 		];
 		$this->template->display('layout/content', $data);
 	}
